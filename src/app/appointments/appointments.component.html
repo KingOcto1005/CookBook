@@ -2,6 +2,12 @@
     <div class="col-xs-10">
         <app-appointments-edit></app-appointments-edit>
         <hr>
-        <p>Services Selected</p>
+        <h2>Schedule</h2>
+        <ul class="list-group">
+            <a 
+            class="list-group-item" 
+            style="cursor: pointer"
+            *ngFor="let details of serviceDetails">Name: {{ details.name }}<br/>Service: {{ details.service }} ({{ details.duration}} mins)</a>
+        </ul>
     </div>
 </div>

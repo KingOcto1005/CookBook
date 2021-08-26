@@ -2,6 +2,7 @@
     <div class="col-xs-12">
         <button class="btn btn-warning">New Appointment</button>
     </div>
+    <hr>
 </div>
 <div class="row">
     <div class="col-xs-12">
@@ -14,8 +15,7 @@
                 <p class="list-group-item-text">{{ area.description }}</p>
             </div>
             <span class="pull-right">
-                <img [attr.src]="area.imagePath" alt="" class="image-responsive" style="max-height: 50px;">
-                <iframe src="https://drive.google.com/file/d/1vu9vQ6kcWZR0HI9yaK695exHQv7N7Tft/preview" width="100" height="100" allow="autoplay"></iframe>
+                <img [src]="area.imagePath" alt="{{ area.type }}" class="image-responsive" style="max-height: 50px;">
             </span>
         </a>
         <app-service-item></app-service-item>

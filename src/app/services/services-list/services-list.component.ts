@@ -8,7 +8,7 @@ import { Service } from '../service.model'
 })
 export class ServicesListComponent implements OnInit {
 services: Service[] = [
-  new Service('Yoga', 'Release tension and acheive re-alignment with an exhilerating Vinyasa session!', 'https://drive.google.com/file/d/1vu9vQ6kcWZR0HI9yaK695exHQv7N7Tft/view?usp=drive_web')
+  new Service('Yoga', 'Release tension and acheive re-alignment with an exhilerating Vinyasa session!', 'https://static.onecms.io/wp-content/uploads/sites/35/2020/06/01/hatha-yoga-promo.jpg')
 ];
   constructor() { }
 
